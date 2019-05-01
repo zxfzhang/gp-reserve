@@ -5,7 +5,6 @@ import "react-datepicker/dist/react-datepicker.css";
 import { WEEKDAY_LETTER_ARRAY } from "../../constants/CalendarConsts";
 import { isSameMonth } from "../../utils";
 
-
 export default class FullCalendarBody extends Component {
   constructor(props) {
     super(props);

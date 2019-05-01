@@ -16,16 +16,6 @@ export const FETCH_STATUS = {
   LOADED: "LOADED",
 };
 
-export const CUSTOMER_STATUS = [
-  { label: "Prospective", value: 1 },
-  { label: "Current", value: 2 },
-  { label: "Non-active", value: 3 },
-];
-
-export const SORT_FIELD_ID = "id";
-export const SORT_FIELD_NAME = "name";
-export const SORT_FIELD_EMAIL = "email";
-
 export const FUTURE_MONTH_NUM = 3;
 export const MINI_CALENDAR_SHOW_DAYS = 5;
 export const TIME_SLOT_MORNING = 0;
@@ -35,6 +25,3 @@ export const NO_SLOT_AVAILABLE = "No appointment available for this date.";
 export const DOCTOR_LANG_SPOKEN = "Language Spoken";
 export const DOCTOR_EDUCATION = "Education";
 export const DOCTOR_BOOK_APPOINTMENT = "Book an Appointment";
-
-
-export const DATE_FORMAT = "DD-MM-YYYY, H:mm:ss";

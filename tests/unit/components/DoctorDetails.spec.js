@@ -16,7 +16,7 @@ describe("<DoctorDetails />", () => {
 
   const createContext = () => ({
     context: { router },
-    childContextTypes: { router: {} },
+    childContextTypes: { router: () => {} },
   });
 
   it("should render a DoctorDetails", () => {
