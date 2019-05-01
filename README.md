@@ -55,3 +55,8 @@ Specs for Unit Test all locate `tests/unit` of each package and are written in `
 2. Run `npm run build` (to pack web files via Webpack and convert JS into ES5 via Babel).
 3. Run `npm start` (to start web server in prod mode).
 4. Go to browser and hit http://localhost:3000 to launch.
+
+### Try it now
+
+An deployment is ready on cloud, clik below link to take a look now!
+http://zxfzhang.s3-website-ap-southeast-2.amazonaws.com/
