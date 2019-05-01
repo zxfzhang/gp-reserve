@@ -1,0 +1,448 @@
+@import "variables.scss";
+
+.vensa-theme-calendar-container {
+  width: $vensa-theme-calendar-container__width;
+  background-color: $vensa-theme-calendar-container__bg-color;
+  max-width: $vensa-theme-calendar-container__max-width;
+  padding: 0.5rem 0 0 0;
+
+  .vensa-theme-calendar-head {
+    margin: 0rem 0.4rem;
+    text-align: center;
+    font-family: $vensa-theme-calendar-container__font-family;
+    font-size: $vensa-theme-calendar-container__font-size;
+    font-weight: $vensa-theme-calendar-container__font-weight;
+
+    .vensa-theme-calendar-head_day {
+      background-color: $vensa-theme-calendar-container__bg-color_override;
+      color: white;
+      margin: 0;
+      padding: 0 0;
+      width: $react-datepicker__day-width;
+      display: inline-block;
+      line-height: 1.7rem;
+      text-align: center;
+    }
+  }
+
+  .react-datepicker {
+    font-family: $vensa-theme-calendar-container__font-family;
+    font-size: $vensa-theme-calendar-container__font-size;
+    font-weight: $vensa-theme-calendar-container__font-weight;
+  }
+
+  .vensa-theme-calendar {
+    width: 100%;
+    background-color: $vensa-theme-calendar-container__bg-color_override;
+    border: none;
+
+    .react-datepicker__header {
+      display: none;
+    }
+
+    .react-datepicker__day {
+      width: $react-datepicker__day-width;
+      padding: 0;
+      color: $vensa-theme-calendar-container__font-color;
+      margin: 0;
+      background-color: $vensa-theme-calendar-container__bg-color_override;
+      -webkit-tap-highlight-color: $vensa-theme-calendar-container__bg-color_override;
+
+      &:hover {
+        background-color: $vensa-theme-calendar-container__bg-color_override;
+      }
+    }
+
+    .react-datepicker__day--selected {
+      color: $vensa-theme-calendar-selected-day__font-color;
+      font-weight: normal;
+      background-color: $vensa-theme-calendar-container__bg-color_override;
+
+      .vensa-theme-calendar-day-inner-div {
+        border-radius: 50%;
+        background-color: $vensa-theme-calendar-selected-day__bg-color;
+      }
+
+      &:hover {
+        color: $vensa-theme-calendar-selected-day__font-color;
+        font-weight: normal;
+        background-color: $vensa-theme-calendar-container__bg-color_override;
+      }
+    }
+
+    .react-datepicker__month-container {
+      width: 100%;
+    }
+
+    .react-datepicker__day--today {
+      font-weight: normal;
+    }
+  }
+
+  .vensa-theme-calendar-day-inner-div {
+    width: $vensa-theme-calendar-selected-day__div-size;
+    height: $vensa-theme-calendar-selected-day__div-size;
+    text-align: center;
+    display: flex; 
+    align-items: center;
+    justify-content: center;  
+    margin: 0 auto;
+  }
+}
+
+.vensa-theme-calendar-tab-header__container {
+  width: $vensa-theme-calendar-container__width;
+  background-color: $vensa-theme-calendar-container__bg-color;
+  max-width: $vensa-theme-calendar-container__max-width;
+  padding: 0.5rem 0rem;
+  font-family: $vensa-theme-calendar-container__font-family;
+  font-size: 1.1rem;
+  font-weight: $vensa-theme-calendar-container__font-weight;
+  display: flex;
+
+  .vensa-theme-calendar-tab-header {
+    width: 80%;
+    white-space: nowrap;
+    display: inline-block;
+    padding-left: 1.5rem;
+  }
+
+  .vensa-theme-calendar-tab-header__tab {
+    display: inline-block;
+    margin: 0.2rem 0.7rem;
+    color: white;
+    cursor: pointer;
+    padding-bottom: 0.2rem;
+    text-align: center;
+  }
+
+  .vensa-theme-calendar-tab-header__tab-selected {
+    font-weight: normal;
+    border-bottom: 2px solid #33CCCC;
+  }
+
+  .vensa-theme-calendar-tab-header__claendar-icon-div {
+    width: 20%;
+    display: inline-block;
+    text-align: right;
+    padding: 0.3rem 2rem;
+  }
+
+  .vensa-theme-calendar-tab-header__mini {
+    font-weight: normal;
+    display: inline-block;
+    margin: 0.2rem 0.5rem;
+    color: white;
+    padding-bottom: 0.2rem;
+    text-align: center;
+  }
+
+  .vensa-theme-calendar-tab-header__claendar-icon {
+    cursor: pointer;
+  }
+}
+
+.vensa-theme-minicalendar-container {
+  width: $vensa-theme-calendar-container__width;
+  background-color: $vensa-theme-minicalendar-container__bg-color;
+  max-width: $vensa-theme-calendar-container__max-width;
+  padding: 0.9rem 0rem;
+  font-family: $vensa-theme-calendar-container__font-family;
+  color: white;
+  font-size: 1.7rem;
+  font-weight: $vensa-theme-minicalendar-container__font-weight;
+  white-space: nowrap;
+  text-align: center;
+
+  .vensa-theme-minicalendar-day {
+    width: $vensa-theme-minicalendar-day__width;
+    padding: 0;
+    margin: 0;
+    background-color: $vensa-theme-calendar-container__bg-color_override;
+    -webkit-tap-highlight-color: $vensa-theme-calendar-container__bg-color_override;
+    display: inline-block;
+  }
+
+  .vensa-theme-minicalendar-day-selected {
+    text-align: center;
+    
+    .vensa-theme-minicalendar-day-inner-div {
+      border-radius: 50%;
+      background-color: $vensa-theme-calendar-selected-day__bg-color;
+    }
+  }
+
+  .vensa-theme-minicalendar-day-inner-div {
+    width: $vensa-theme-minicalendar-day__div-size;
+    height: $vensa-theme-minicalendar-day__div-size;
+    text-align: center;
+    align-items: center;
+    justify-content: center;  
+    margin: 0 auto;
+    cursor: pointer;
+  }
+
+  .vensa-theme-minicalendar-day-inner-date {
+    padding: 0.6rem 0 0;
+    height: 2rem;
+    margin: 0;
+  }
+
+  .vensa-theme-minicalendar-day-inner-weekday {
+    padding: 0;
+    margin: 0;
+    font-size: 0.85rem;
+  }
+}
+
+
+.vensa-theme-slot-filter__container {
+  width: $vensa-theme-calendar-container__width;
+  background-color: $vensa-theme-minicalendar-container__bg-color;
+  max-width: $vensa-theme-calendar-container__max-width;
+  padding: 0.5rem 0rem;
+  font-family: $vensa-theme-calendar-container__font-family;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: $vensa-theme-minicalendar-container__font-weight;
+  white-space: nowrap;
+  text-align: center;
+
+  .vensa-theme-slot-filter__itemlist {
+    width: 90%;
+    padding: 0;
+    margin: 0;
+    background-color: $vensa-theme-calendar-container__bg-color_override;
+    -webkit-tap-highlight-color: $vensa-theme-calendar-container__bg-color_override;
+    display: inline-block;
+  }
+
+  .vensa-theme-slot-filter__item {
+    width: 25%;
+    padding: 0.4rem;
+    margin: 0.3rem;
+    background-color: $vensa-theme-calendar-container__bg-color_override;
+    -webkit-tap-highlight-color: $vensa-theme-calendar-container__bg-color_override;
+    display: inline-block;
+    border: 1px solid transparent;
+    cursor: pointer;
+  }
+
+  .vensa-theme-slot-filter__item-selected {
+    border: 1px solid white;
+    border-radius: 1.3rem;
+  }
+}
+
+.vensa-theme-doctor-panel__container {
+  width: 100%;
+  background-color: white;
+  max-width: $vensa-theme-calendar-container__max-width;
+  padding: 0.9rem 0rem;
+  font-family: $vensa-theme-calendar-container__font-family;
+  font-weight: $vensa-theme-minicalendar-container__font-weight;
+  white-space: nowrap;
+  margin: 0.2rem 0rem;
+
+  .vensa-theme-doctor-panel__info {
+    align-items: center;
+    justify-content: center; 
+    margin: 0.5rem;
+  }
+
+  .vensa-theme-doctor-panel__avator {
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .vensa-theme-doctor-panel__intro {
+    margin: 0.5rem 1rem;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .vensa-theme-doctor-panel__name {
+    font-size: 1.5rem;
+    color: #2A95BF;
+  }
+
+  .vensa-theme-doctor-panel__title {
+    font-size: 1rem;
+    color: #818181;
+  }
+  
+  .vensa-theme-doctor-panel__slot-list {
+    margin: 0.5rem;
+    overflow: auto;
+  }
+
+  .vensa-theme-doctor-panel__avator-img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .vensa-theme-doctor-panel__slot-item {
+    font-size: 1.3rem;
+    color: #8D8D8D;
+    background-color: #F7F7F7;
+    border-radius: 0.3rem;
+    width: 3.2rem;
+    text-align: center;
+    padding: 0.5rem 0.8rem;
+    margin: 0rem 0.5rem;
+    display: inline-block;
+  }
+
+  .vensa-theme-doctor-panel__slot-noitem {
+    font-size: 1rem;
+    color: #8D8D8D;
+    background-color: #F7F7F7;
+    border-radius: 0.3rem;
+    width: 90%;
+    text-align: center;
+    padding: 0.5rem 0.8rem;
+    margin: 0rem 0.5rem;
+    display: inline-block;
+  }
+}
+
+.vensa-theme-doctor-list {
+  background-color: #F7F7F7;
+  max-width: $vensa-theme-calendar-container__max-width;
+}
+
+.vensa-theme-appointment-container {
+  width: $vensa-theme-calendar-container__width;
+  max-width: $vensa-theme-calendar-container__max-width;
+  a {
+    text-decoration: none;
+  }
+
+  .vensa-theme-appointment-msg {
+    width: 90%;
+    padding-top: 5rem;
+    text-align: center;
+  }
+}
+
+.vensa-theme-doctor-details__container {
+  width: 100%;
+  background-color: white;
+  max-width: $vensa-theme-calendar-container__max-width;
+  padding: 0.9rem 0rem;
+  font-family: $vensa-theme-calendar-container__font-family;
+  font-weight: $vensa-theme-minicalendar-container__font-weight;
+  margin: 0.2rem 0rem;
+  text-align: center;
+
+  .vensa-theme-doctor-details__avator-img {
+    width: 8.5rem;
+    height: 8.5rem;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .vensa-theme-doctor-details__name {
+    font-size: 1.5rem;
+    color: #6C6C6C;
+    font-weight: normal;
+    padding: 0.5rem 0 0 0;
+  }
+
+  .vensa-theme-doctor-details__title {
+    font-size: 1.2rem;
+    color: #AFAFAF;
+    font-weight: lighter;
+    padding: 0.3rem;
+  }
+
+  .vensa-theme-doctor-details__bookbutton-div {
+    text-align: center;
+    padding: 2rem;
+
+    .vensa-theme-doctor-details__bookbutton {
+      padding: 1.3rem;
+      font-size: 1.2rem;
+      color: #2FACC7;
+      font-weight: normal;
+      border: 1px solid #2FACC7;
+      border-radius: 0.4rem;
+      width: 78%;
+      display: inline-block;
+    }
+  }
+
+  .vensa-theme-doctor-details__desc {
+    font-size: 1.2rem;
+    color: #AFAFAF;
+    font-weight: lighter;
+    padding: 1rem;
+    text-align: left;
+  }
+
+  .vensa-theme-doctor-details__lang {
+    padding: 1rem 0rem 1rem 0rem;
+    text-align: left;
+    border-top: 1px solid #D8D8D8;
+    margin: 1rem 1rem 0rem 1rem;
+
+    .vensa-theme-doctor-details__lang-title {
+      font-size: 1.2rem;
+      color: #585656;
+      font-weight: normal;
+    }
+
+    .vensa-theme-doctor-details__lang-itemlist {
+      margin: 1rem 1.5rem;
+      font-size: 1.2rem;
+      color: #AFAFAF;
+      font-weight: lighter;
+    }
+
+    .vensa-theme-doctor-details__lang-item {
+      margin: 0.5rem 0.5rem;
+      width: 28%;
+      display: inline-block;
+    }
+  }
+
+  .vensa-theme-doctor-details__degree {
+    padding: 1rem 0rem 1rem 0rem;
+    text-align: left;
+    border-top: 1px solid #D8D8D8;
+    border-bottom: 1px solid #D8D8D8;
+    margin: 0rem 1rem 1rem 1rem;
+
+    .vensa-theme-doctor-details__degree-title {
+      font-size: 1.2rem;
+      color: #585656;
+      font-weight: normal;
+    }
+
+    .vensa-theme-doctor-details__degree-itemlist {
+      margin: 1rem 1.5rem;
+      font-size: 1.2rem;
+      color: #AFAFAF;
+      font-weight: lighter;
+    }
+
+    .vensa-theme-doctor-details__degree-item {
+      margin: 0.5rem 0.5rem;
+      width: 28%;
+      display: inline-block;
+    }
+  }
+
+  .vensa-theme-doctor-details__close-btndiv {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    max-width: 500px;
+    z-index: 1000;
+    text-align: center;
+  }
+}
+

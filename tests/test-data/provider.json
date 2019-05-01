@@ -1,0 +1,9 @@
+{ 
+  "Id": "e538c28d-52df-0654-800f-6145909aca28",
+  "Name": "Dr. John Smith",
+  "Title": "General Practitioner",
+  "Description": "Dr. John Smith graduated from the University of Auckland in 1999. He has been working as a General Practitioner for 17 years, 8 years at MCAM and enjoys all aspects of General Practice, with special emphasis on preventative health care. His non-medical interests are fitness, reading and time with his family.",
+  "Languages": [ "English", "Italian", "German" ],
+  "Degrees": [ "M.B.Ch.B", "F.N.Z.C.G.P", "Dip O&G" ],
+  "PictureURL": "/api/Picture/e538c28d-52df-0654-800f-6145909aca28" 
+}
